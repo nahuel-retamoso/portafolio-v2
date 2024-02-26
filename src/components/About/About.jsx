@@ -5,6 +5,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdOutlineContactPage } from "react-icons/md";
+import { getContactInfo } from '../../sanity';
+import { useEffect, useState } from 'react';
 
 export default function About() {
 
@@ -13,6 +15,18 @@ export default function About() {
         to: { opacity: 1 },
         config: config.molasses
     })
+
+    const [ data, setData ] = useState(null)
+
+    useEffect(() => {
+        const fetchData = async () => {
+            let data = await getContactInfo();
+            setData(data[0]);
+            // console.log(data[0].github_profile_url); // Ten en cuenta que este log puede no reflejar inmediatamente los cambios en 'projects' debido a la naturaleza asincrónica de setState.
+        };
+    
+        fetchData();
+    },[])
 
     
     return (
@@ -44,15 +58,18 @@ export default function About() {
                 <KeyboardScene />
             </animated.div>
             <animated.div style={ styles } className="mt-10 flex space-x-10 lg:mt-28 lg:pl-2 text-white/60">
-
-                <FaGithub class="h-9 w-9" />
-
+                <a href={data?.github_profile_url} target="_blank">
+                    <FaGithub class="h-9 w-9" />
+                </a>
+                <a href={data?.linkedin_profile_url} target="_blank">
                 <FaLinkedin class="h-9 w-9" />
-
+                </a>
+                <a href={data?.email_adress} target="_blank">
                 <MdEmail class="h-9 w-9" />
-
+                </a>
+                <a href={data?.curriculum} target="_blank">
                 <MdOutlineContactPage class="h-9 w-9" />
-
+                </a>
             </animated.div>
         </div>
     )

@@ -15,7 +15,7 @@ export default function Model() {
         modelAnimations.actions.Animation.play()
     }, [modelAnimations])
 
-    const animationSpeed = () => {
+    const animationSpeed = (x) => {
         modelAnimations.actions.Animation.setDuration(x);
     }
     
