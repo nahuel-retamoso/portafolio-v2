@@ -1,7 +1,7 @@
 import { config, useSpring, animated } from "@react-spring/web";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard/ProjectCard.jsx";
 import { useEffect, useState } from "react";
-import {getProjects, client} from "../../sanity.js";
+import {getProjects} from "../../sanity.js";
 
 export default function Projects () {
 
