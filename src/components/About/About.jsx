@@ -46,15 +46,15 @@ export default function About() {
             <animated.div style={styles} className="h-40 pt-10 lg:pt-2 lg:h-24 lg:pr-10">
                 <TypeAnimation
                     sequence={[
-                        'Hola, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis projectos personales con los que estuve practicando. Cada uno cuentan con deploy y link a su repo de github.',
+                        'Hola, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis projectos personales con los que estuve practicando. Cada uno cuentan con deploy y link al repo de github.',
                         3000,
-                        'Tengo conocimientos fullstack, uso javascript. Me enfoco principalmente en el frontend usando React.', // Types 'One'
-                        3000, // Waits 1s
-                        'Inicié a programar de manera autodidacta y posteriormente perfeccioné mis habilidades a través del curso de React y Backend en Coderhouse.', // Deletes 'One' and types 'Two'
-                        3000, // Waits 2s
+                        'Tengo conocimientos fullstack, uso javascript. Me enfoco principalmente en el frontend usando React.',
+                        3000,
+                        'Inicié a programar de manera autodidacta y posteriormente perfeccioné mis habilidades a través del curso de React y Backend en Coderhouse.',
+                        3000,
                         'Amplie mi experiencia mediante la práctica y el aprendizaje de diversas librerías y herramientas, las cuales he aplicado en proyectos personales.',
-                        3000, // Types 'Three' without deleting 'Two'
-                        'Si mi perfil es de su interes o desea mas detalles sobre mi experiencia, estoy disponible para cualquier consulta.',
+                        3000,
+                        'Si mi perfil es de tu interes o deseas mas detalles sobre mi experiencia, no dudes en contactarte conmigo. Estoy disponible para cualquier consulta.',
                         3000,
                     ]}
                     wrapper="span"
