@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import Model from "./Model";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 
 export default function KeyboardScene() {
 

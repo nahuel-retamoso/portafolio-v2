@@ -27,13 +27,13 @@ export default function Model() {
         }
     }, [click])
 
-    const rotation = useSpring({ from: {rotation: 0.65, scale: 30}, to: {rotation: 1}, loop: { reverse: true,}, config: config.slow })
-
-    const scale = useSpring({ from: { scale: 10}, to: { scale: 28}, config: {
+    const rotation = useSpring({ from: {rotation: 0.65, scale: 30}, to: {rotation: 1}, loop: { reverse: true,}, config: {
         mass: 25,
-        friction: 36,
+        friction: 56,
         tension: 40,
     } })
+
+    const scale = useSpring({ from: { scale: 10}, to: { scale: 28}, config: config.molasses })
 
 
     const handleClick = () => {

@@ -54,10 +54,10 @@ export default function About() {
                     className="text-white/50 text-md font-extralight bg-white/5"
                 />
             </animated.div>
-            <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-4/6">
+            <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-5/6">
                 <KeyboardScene />
             </animated.div>
-            <animated.div style={ styles } className="mt-10 flex space-x-10 lg:mt-28 lg:pl-2 text-stone-200/80">
+            <animated.div style={ styles } className="mt-10 flex space-x-10 lg:mt-20 lg:pl-2 text-stone-200/80">
                 <a href={data?.github_profile_url} target="_blank">
                     <FaGithub class="h-9 w-9" />
                 </a>
