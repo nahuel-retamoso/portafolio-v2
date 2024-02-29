@@ -17,4 +17,3 @@ export const client = createClient({
     const result = client.fetch('*[_type == "contact_links"]')
     return result
   }
-  
