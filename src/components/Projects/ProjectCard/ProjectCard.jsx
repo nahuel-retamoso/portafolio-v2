@@ -17,12 +17,11 @@ export default function ProjectCard({ name, description, image, tags, repo, depl
     const [hover, setHover] = useState(false)
 
     const cardSprings = useSpring({
-        // scale: hover ? 1.01 : 1,
-        backgroundColor: hover ? 'rgba(255, 255, 255, 0.03)' : 'rgba(255, 255, 255, 0.00)',
-        boxShadow: hover ? '0 4px 30px rgba(0, 0, 0, 0.1)' : '0 4px 30px rgba(0, 0, 0, 0.0)',
-        // backdropFilter: hover ? 'blur(2.3px)' : 'blur(0px)',
+        backgroundColor: hover ? 'rgba(255, 255, 255, 0.02)' : 'rgba(255, 255, 255, 0.00)',
+        boxShadow: hover ? '0 4px 30px rgba(0, 0, 0, 0.05)' : '0 4px 30px rgba(0, 0, 0, 0.0)',
         webkitBackdropFilter: hover ? 'blur(2.3px)' : 'blur(0px)',
         border: hover ? '1px solid rgba(255, 255, 255, 0.02)' : '1px solid rgba(255, 255, 255, 0.00)',
+        config: config.stiff,
     })
 
     return (

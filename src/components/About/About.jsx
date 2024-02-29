@@ -31,8 +31,8 @@ export default function About() {
     
     return (
         <div className="p-7 lg:pt-20">
-            <animated.h1 style={styles} className="text-4xl font-bold my-3 text-stone-200 lg:text-5xl">Nahuel Retamoso</animated.h1>
-            <animated.h2 style={styles} className="font-semibold text-stone-300 text-lg mb-3 font-medium lg:text-xl">Programador Fullstack</animated.h2>
+            <animated.h1 style={styles} className="text-4xl font-bold my-3 text-stone-200/95 lg:text-5xl">Nahuel Retamoso</animated.h1>
+            <animated.h2 style={styles} className="font-semibold text-stone-200/80 text-lg mb-3 font-medium lg:text-xl">Programador Fullstack</animated.h2>
             <animated.div style={styles} className="h-40 pt-10 lg:pt-2 lg:h-24 lg:pr-10">
                 <TypeAnimation
                     sequence={[
@@ -57,7 +57,7 @@ export default function About() {
             <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-4/6">
                 <KeyboardScene />
             </animated.div>
-            <animated.div style={ styles } className="mt-10 flex space-x-10 lg:mt-28 lg:pl-2 text-white/60">
+            <animated.div style={ styles } className="mt-10 flex space-x-10 lg:mt-28 lg:pl-2 text-stone-200/80">
                 <a href={data?.github_profile_url} target="_blank">
                     <FaGithub class="h-9 w-9" />
                 </a>

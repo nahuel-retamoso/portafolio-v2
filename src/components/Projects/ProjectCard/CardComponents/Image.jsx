@@ -11,14 +11,14 @@ export default function Image({ imageRef, deploy }) {
 
     const imageSprings = useSpring({
         scale: imageHover ? 1.02 : 1,
-        
+        config: config.stiff
     })
 
     const backgroundSpring = useSpring({
         backgroundColor: imageHover ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.0)',
         // border: imageHover ? '2px solid rgba(255,255,255,0.3)' : '0px solid rgba(255,255,255,0.0)',
         boxShadow: imageHover ? '0px 0px 15px 1px rgba(0,0,0,0.41)' : '0px 0px 0px 0px rgba(0,0,0,0.0)',
-        config: config.molasses
+        config: config.stiff
     })
 
     const deployIconSpring = useSpring({
