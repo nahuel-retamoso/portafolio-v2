@@ -46,6 +46,7 @@ export default function About() {
             <animated.div style={styles} className="h-40 pt-10 lg:pt-2 lg:h-24 lg:pr-10">
                 <TypeAnimation
                     sequence={[
+                        1000,
                         'Hola, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis projectos personales con los que estuve practicando. Cada uno cuentan con deploy y link al repo de github.',
                         3000,
                         'Tengo conocimientos fullstack, uso javascript. Me enfoco principalmente en el frontend usando React.',
@@ -78,7 +79,7 @@ export default function About() {
                 <a onClick={() => copyToClipboard()} target="_blank">
                     <MdEmail class="h-9 w-9" />
                 </a>
-                <a href="https://drive.google.com/file/d/1oFgpnhb61djCqb6p5b5FG7gaVCO6JWd4/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1EdATYYE14BcIYNQ7pWok-mzqh_ONS-xY/view?usp=sharing" target="_blank">
                     <MdOutlineContactPage class="h-9 w-9" />
                 </a>
             </animated.div>
