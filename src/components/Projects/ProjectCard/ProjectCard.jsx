@@ -25,17 +25,17 @@ export default function ProjectCard({ name, description, image, tags, repo, depl
     })
 
     return (
-        <animated.div ref={ref} class=" h-fit my-3 hover:shadow-2xl lg:p-6 rounded-md lg:shadow-inner" onMouseOver={() => setHover(true)}
+        <animated.div ref={ref} class=" h-fit my-3 hover:shadow-2xl xl:p-6 rounded-md xl:shadow-inner" onMouseOver={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             style={{ ...cardSprings, ...inViewSpring }}>
 
-            <div class="lg:flex lg:pb-2">
+            <div class="xl:flex xl:pb-2">
 
                 <TitleDescription name={name} description={description} />
 
-                <div class='lg:order-first lg:w-2/6 my-5 lg:my-0 w-44'>
+                <div class='xl:order-first xl:w-2/6 my-5 xl:my-0 w-44'>
                     <Image imageRef={image} deploy={deploy} />
-                    <div class="lg:w-48 flex">
+                    <div class="xl:w-48 flex">
                         <GithubButton repo={repo} />
                     </div>
                 </div>

@@ -25,7 +25,7 @@ export default function Projects () {
 
     return (
         <animated.div style={styles} class="m-7">
-            <h2 class="text-md font-bold text-stone-200/80 mb-10 lg:ml-6">PROJECTOS</h2>
+            <h2 class="text-md font-bold text-stone-200/80 mb-10 xl:ml-6">PROJECTOS</h2>
             {data?.map((project, key) => {
                 return (<ProjectCard key={key} name={project.project_name} description={project.project_description} image={project.project_image} tags={project.project_tags} deploy={project.deploy_link} repo={project.repo_link}/>)
             })}

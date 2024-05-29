@@ -6,7 +6,7 @@ import Skills from "./components/Skills/Skills"
 function App() {
 
   return (
-    <div class="h-fit lg:flex lg:h-screen lg:w-full lg:px-56">
+    <div class="h-fit lg:flex lg:h-screen lg:w-full lg:px-28 xl:px-36 2xl:px-56">
     <div class="lg:w-2/5 ">
       <About/>
     </div>
