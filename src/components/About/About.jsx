@@ -41,9 +41,31 @@ export default function About() {
 
     return (
         <div className="p-7 lg:pt-20">
-            <animated.h1 style={styles} className="text-4xl font-bold my-3 text-stone-200/95 lg:text-5xl">Nahuel Retamoso</animated.h1>
-            <animated.h2 style={styles} className="font-semibold text-stone-200/80 text-lg mb-3 font-medium lg:text-xl">Programador Fullstack</animated.h2>
+            <animated.h1 style={styles} className="text-4xl font-bold my-3 text-stone-200/95 2xl:text-5xl">Nahuel Retamoso</animated.h1>
+            <animated.h2 style={styles} className="font-semibold text-stone-200/80 text-lg mb-3 font-medium 2xl:text-xl">Programador Fullstack</animated.h2>
             <animated.div style={styles} className="h-40 pt-10 lg:pt-2 lg:h-24 lg:pr-10">
+                <style>
+                    {`
+        .responsive-text {
+          font-size: 16px;
+        }
+        @media (min-width: 1024px) {
+          .responsive-text {
+            font-size: 1.3vw;
+          }
+        }
+        @media (min-width: 1280px) {
+          .responsive-text {
+            font-size: 16px;
+          }
+        }
+        @media (min-width: 1536px) {
+          .responsive-text {
+            font-size: 18px;
+          }
+        }
+      `}
+                </style>
                 <TypeAnimation
                     sequence={[
                         1000,
@@ -63,10 +85,11 @@ export default function About() {
                     speed={78}
                     cursor={true}
                     repeat={Infinity}
-                    className="text-white/50 text-md font-extralight bg-white/5"
+                    // style={{ 'fontSize': '1vw' }}
+                    className="responsive-text text-white/50 font-extralight bg-white/5"
                 />
             </animated.div>
-            <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-5/6">
+            <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-4/6 xl:w-5/6">
                 <KeyboardScene />
             </animated.div>
             <animated.div style={styles} className="mt-10 flex space-x-10 lg:mt-20 lg:pl-2 text-stone-200/80">
