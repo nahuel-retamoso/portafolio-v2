@@ -61,7 +61,7 @@ export default function About() {
         }
         @media (min-width: 1536px) {
           .responsive-text {
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       `}
@@ -69,16 +69,16 @@ export default function About() {
                 <TypeAnimation
                     sequence={[
                         1000,
-                        'Hola, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis projectos personales con los que estuve practicando. Cada uno cuentan con deploy y link al repo de github.',
-                        3000,
-                        'Tengo conocimientos fullstack, uso javascript. Me enfoco principalmente en el frontend usando React.',
-                        3000,
-                        'Inicié a programar de manera autodidacta y posteriormente perfeccioné mis habilidades a través del curso de React y Backend en Coderhouse.',
-                        3000,
-                        'Amplie mi experiencia mediante la práctica y el aprendizaje de diversas librerías y herramientas, las cuales he aplicado en proyectos personales.',
-                        3000,
-                        'Si mi perfil es de tu interes o deseas mas detalles sobre mi experiencia, no dudes en contactarte conmigo. Estoy disponible para cualquier consulta.',
-                        3000,
+                        'Hola, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales con los que estuve practicando. Cada uno cuentan con deploy y link al repo de GitHub.',
+                        4000,
+                        'Soy programador full-stack, uso JavaScript. Aunque por ahora me estoy centrando más en el front-end, usando React; me gustaría continuar aprendiendo más del back-end.',
+                        4000,
+                        'Inicié a programar de manera autodidacta y posteriormente realicé el curso de React y back-end con Node.js en Coderhouse.',
+                        4000,
+                        'Amplíe mi experiencia mediante la práctica y el aprendizaje de diversas librerías y herramientas, aplicándolas en mis proyectos personales.',
+                        4000,
+                        'No dudes en comunicarte conmigo si pensás que podría ayudar en tu proyecto o si deseas más detalles sobre mi experiencia. Estoy abierto para cualquier consulta.',
+                        4000,
                     ]}
                     wrapper="span"
                     deletionSpeed={88}
@@ -102,7 +102,7 @@ export default function About() {
                 <a onClick={() => copyToClipboard()} target="_blank">
                     <MdEmail class="h-9 w-9" />
                 </a>
-                <a href="https://drive.google.com/file/d/1EdATYYE14BcIYNQ7pWok-mzqh_ONS-xY/view?usp=sharing" target="_blank">
+                <a href={data?.cvlink} target="_blank">
                     <MdOutlineContactPage class="h-9 w-9" />
                 </a>
             </animated.div>

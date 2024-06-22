@@ -5,7 +5,7 @@ import { Suspense } from "react";
 export default function KeyboardScene() {
 
     return (
-        <Canvas orthographic camera={{ zoom: 50, position: [0, 0, 100] }}>
+        <Canvas orthographic camera={{ zoom: 45, position: [0, 0, 100] }}>
             <Suspense>
                 <ambientLight color="white" intensity={0.5} />
                 <Model/>
