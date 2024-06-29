@@ -69,16 +69,16 @@ export default function About() {
                 <TypeAnimation
                     sequence={[
                         1000,
-                        'Hola, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales con los que estuve practicando. Cada uno cuentan con deploy y link al repo de GitHub.',
+                        'Hola! soy Nahuel, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales. Cada uno cuentan con deploy y link al repo de GitHub.',
                         4000,
-                        'Soy programador full-stack, uso JavaScript. Aunque por ahora me estoy centrando más en el front-end, usando React; me gustaría continuar aprendiendo más del back-end.',
+                        'Inicié a programar de manera autodidacta usando javascript y aprendiendo conceptos. Luego realicé el curso de React y back-end con Node.js en Coderhouse.',
                         4000,
-                        'Inicié a programar de manera autodidacta y posteriormente realicé el curso de React y back-end con Node.js en Coderhouse.',
+                        'Con mis proyectos personales aprendi a usar diversas librerias y herramientas. Manejo de estados, animaciones e implementar APIs',
                         4000,
-                        'Amplíe mi experiencia mediante la práctica y el aprendizaje de diversas librerías y herramientas, aplicándolas en mis proyectos personales.',
-                        4000,
-                        'No dudes en comunicarte conmigo si pensás que podría ayudar en tu proyecto o si deseas más detalles sobre mi experiencia. Estoy abierto para cualquier consulta.',
-                        4000,
+                        'Abajo vas a encontrar links a mi perfil de github, linkedin, email y CV.',
+                        5000,
+                        'Podes hacer click en el teclado de abajo! no te vayas sin haberlo probado 🖱️ 👇',
+                        5000
                     ]}
                     wrapper="span"
                     deletionSpeed={88}
