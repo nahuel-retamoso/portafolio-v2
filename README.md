@@ -1,9 +1,10 @@
-# React + Vite
+## Portafolio personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Framework y librerias usadas:
 
-Currently, two official plugins are available:
+  - React
+  - React Three Fiber
+  - ChakraUI
+  - Sanity
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# portafolio-v2
+![2024-06-29 02 29 11 portafolio-nahuel-retamoso vercel app 08db66e1a747](https://github.com/nahuel-retamoso/portafolio-v2/assets/34424810/344766dd-cc3f-4cd6-8a3a-ef5980a766cb)
