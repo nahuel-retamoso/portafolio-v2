@@ -1,4 +1,4 @@
-import About from "./components/About/About"
+import About from "./components/About/About/About"
 import Footer from "./components/Footer/Footer"
 import Projects from "./components/Projects/Projects"
 import Skills from "./components/Skills/Skills"
