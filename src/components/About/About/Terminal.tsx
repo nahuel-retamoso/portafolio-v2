@@ -10,7 +10,7 @@ function Terminal() {
     })
 
     return (
-        <div className='h-48 mt-10 lg:mt-0 lg:h-48 lg:w-4/6 xl:w-5/6 border border-black/50 overflow-hidden rounded-md opacity-70 mb-5 lg:mb-0'>
+        <div className='h-48 mt-10 lg:mt-0 lg:h-48 lg:w-4/6 xl:w-5/6 border border-black/50 overflow-hidden rounded-md opacity-70 mb-5'>
             <div className='h-9 bg-[#2c3133] flex items-center'>
                 <div className='w-1/6'>
 
