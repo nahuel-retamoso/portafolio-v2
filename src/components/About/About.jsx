@@ -42,9 +42,11 @@ export default function About() {
     return (
         <div className="flex flex-col lg:justify-between lg:h-full p-7 lg:py-20">
             <div>
+                <div className='flex flex-col items-center lg:items-start'>
                 <animated.h1 style={styles} className="text-4xl font-bold my-1 text-stone-200/95 2xl:text-5xl">Nahuel Retamoso</animated.h1>
-                <animated.h2 style={styles} className="font-light text-stone-200/80 text-lg mb-6 font-medium 2xl:text-xl">Programador Fullstack</animated.h2>
-                <div className='h-40 mt-10 lg:mt-2 lg:h-40 lg:w-4/6 xl:w-5/6 border border-black/50 overflow-hidden rounded-md'>
+                <animated.h2 style={styles} className="font-light text-stone-200/80 text-lg font-medium 2xl:text-xl">Programador Fullstack</animated.h2>
+                </div>
+                <div className='h-40 mt-10 lg:mt-16 lg:h-40 lg:w-4/6 xl:w-5/6 border border-black/50 overflow-hidden rounded-md'>
                     <div className='h-9 bg-[#2c3133] flex items-center'>
                         <div className='w-1/6'>
 
@@ -106,7 +108,7 @@ export default function About() {
                 </animated.div>
             </div>
 
-            <animated.div style={styles} className="mt-10 flex lg:justify-between space-x-12 lg:mt-20 lg:w-4/6 xl:5/6 text-stone-200/80">
+            <animated.div style={styles} className="mt-10 flex justify-between px-5 lg:px-0 lg:mt-16 lg:w-4/6 xl:w-5/6 text-stone-200/80">
                 <a href={data?.github_profile_url} target="_blank">
                     <FaGithub class="h-9 w-9" />
                 </a>
