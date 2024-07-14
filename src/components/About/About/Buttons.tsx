@@ -34,7 +34,7 @@ function Buttons() {
     }, [])
 
     return (
-        <animated.div style={styles} className="flex justify-between px-5 lg:w-4/6 xl:w-5/6 text-stone-400 lg:p-5">
+        <animated.div style={styles} className="flex justify-between px-5 lg:w-4/6 xl:w-5/6 text-stone-400 p-5">
             <a href={data?.github_profile_url} target="_blank">
                 <FaGithub class="h-8 w-8" />
             </a>
