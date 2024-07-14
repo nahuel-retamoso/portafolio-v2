@@ -10,7 +10,7 @@ function Terminal() {
     })
 
     return (
-        <div className='h-40 mt-10 lg:mt-0 lg:h-40 lg:w-4/6 xl:w-5/6 border border-black/50 overflow-hidden rounded-md'>
+        <div className='h-40 mt-10 lg:mt-0 lg:h-48 lg:w-4/6 xl:w-5/6 border border-black/50 overflow-hidden rounded-md opacity-70'>
             <div className='h-9 bg-[#2c3133] flex items-center'>
                 <div className='w-1/6'>
 
@@ -20,7 +20,7 @@ function Terminal() {
                 </div>
                 <div className='rounded-full w-1/6 text-[10px] flex justify-end p-3'>X</div>
             </div>
-            <animated.div style={styles} className=" bg-[#232729] h-full px-1">
+            <animated.div style={styles} className=" bg-[#232729] h-full px-3">
                 <style>
                     {`
             .responsive-text {
@@ -46,15 +46,15 @@ function Terminal() {
                 <TypeAnimation
                     sequence={[
                         1000,
-                        'Hola! soy Nahuel, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales. Cada uno cuentan con deploy y link al repo de GitHub.',
+                        'computer@nahuel-desk:~$ Hola! soy Nahuel, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales. Cada uno cuentan con deploy y link al repo de GitHub.',
                         4000,
-                        'Inicié a programar de manera autodidacta usando javascript y aprendiendo conceptos. Luego realicé el curso de React y back-end con Node.js en Coderhouse.',
+                        'computer@nahuel-desk:~$ Inicié a programar de manera autodidacta usando javascript y aprendiendo conceptos. Luego realicé el curso de React y back-end con Node.js en Coderhouse.',
                         4000,
-                        'Con mis proyectos personales aprendi a usar diversas librerias y herramientas. Manejo de estados, animaciones e implementar APIs',
+                        'computer@nahuel-desk:~$ Con mis proyectos personales aprendi a usar diversas librerias y herramientas. Manejo de estados, animaciones e implementar APIs',
                         4000,
-                        'Abajo vas a encontrar links a mi perfil de github, linkedin, email y CV.',
+                        'computer@nahuel-desk:~$ Abajo vas a encontrar links a mi perfil de github, linkedin, email y CV.',
                         5000,
-                        'Podes hacer click en el teclado de abajo! no te vayas sin haberlo probado 🖱️ 👇',
+                        'computer@nahuel-desk:~$ Podes hacer click en el teclado de abajo! no te vayas sin haberlo probado 🖱️ 👇',
                         5000
                     ]}
                     wrapper="span"
