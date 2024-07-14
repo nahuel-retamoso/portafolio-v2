@@ -40,59 +40,73 @@ export default function About() {
 
 
     return (
-        <div className="p-7 lg:pt-20">
-            <animated.h1 style={styles} className="text-4xl font-bold my-3 text-stone-200/95 2xl:text-5xl">Nahuel Retamoso</animated.h1>
-            <animated.h2 style={styles} className="font-semibold text-stone-200/80 text-lg mb-3 font-medium 2xl:text-xl">Programador Fullstack</animated.h2>
-            <animated.div style={styles} className="h-40 pt-10 lg:pt-2 lg:h-24 lg:pr-10">
-                <style>
-                    {`
-        .responsive-text {
-          font-size: 16px;
-        }
-        @media (min-width: 1024px) {
-          .responsive-text {
-            font-size: 1.3vw;
-          }
-        }
-        @media (min-width: 1280px) {
-          .responsive-text {
-            font-size: 16px;
-          }
-        }
-        @media (min-width: 1536px) {
-          .responsive-text {
-            font-size: 16px;
-          }
-        }
-      `}
-                </style>
-                <TypeAnimation
-                    sequence={[
-                        1000,
-                        'Hola! soy Nahuel, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales. Cada uno cuentan con deploy y link al repo de GitHub.',
-                        4000,
-                        'Inicié a programar de manera autodidacta usando javascript y aprendiendo conceptos. Luego realicé el curso de React y back-end con Node.js en Coderhouse.',
-                        4000,
-                        'Con mis proyectos personales aprendi a usar diversas librerias y herramientas. Manejo de estados, animaciones e implementar APIs',
-                        4000,
-                        'Abajo vas a encontrar links a mi perfil de github, linkedin, email y CV.',
-                        5000,
-                        'Podes hacer click en el teclado de abajo! no te vayas sin haberlo probado 🖱️ 👇',
-                        5000
-                    ]}
-                    wrapper="span"
-                    deletionSpeed={88}
-                    speed={78}
-                    cursor={true}
-                    repeat={Infinity}
-                    // style={{ 'fontSize': '1vw' }}
-                    className="responsive-text text-white/50 font-extralight bg-white/5"
-                />
-            </animated.div>
-            <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-4/6 xl:w-5/6">
-                <KeyboardScene />
-            </animated.div>
-            <animated.div style={styles} className="mt-10 flex space-x-10 lg:mt-20 lg:pl-2 text-stone-200/80">
+        <div className="flex flex-col lg:justify-between lg:h-full p-7 lg:py-20">
+            <div>
+                <animated.h1 style={styles} className="text-4xl font-bold my-1 text-stone-200/95 2xl:text-5xl">Nahuel Retamoso</animated.h1>
+                <animated.h2 style={styles} className="font-light text-stone-200/80 text-lg mb-6 font-medium 2xl:text-xl">Programador Fullstack</animated.h2>
+                <div className='h-40 mt-10 lg:mt-2 lg:h-40 lg:w-4/6 xl:w-5/6 border border-black/50 overflow-hidden rounded-md'>
+                    <div className='h-9 bg-[#2c3133] flex items-center'>
+                        <div className='w-1/6'>
+
+                        </div>
+                        <div className='justify-center flex w-4/6'>
+                            <p className='text-xs'>computer@nahuel-desk: ~</p>
+                        </div>
+                        <div className='rounded-full w-1/6 text-[10px] flex justify-end p-3'>X</div>
+                    </div>
+                    <animated.div style={styles} className=" bg-[#232729] h-full px-1">
+                        <style>
+                            {`
+            .responsive-text {
+            font-size: 12px;
+            }
+            @media (min-width: 1024px) {
+            .responsive-text {
+                font-size: 1.3vw;
+            }
+            }
+            @media (min-width: 1280px) {
+            .responsive-text {
+                font-size: 12px;
+            }
+            }
+            @media (min-width: 1536px) {
+            .responsive-text {
+                font-size: 13px;
+            }
+            }
+        `}
+                        </style>
+                        <TypeAnimation
+                            sequence={[
+                                1000,
+                                'Hola! soy Nahuel, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales. Cada uno cuentan con deploy y link al repo de GitHub.',
+                                4000,
+                                'Inicié a programar de manera autodidacta usando javascript y aprendiendo conceptos. Luego realicé el curso de React y back-end con Node.js en Coderhouse.',
+                                4000,
+                                'Con mis proyectos personales aprendi a usar diversas librerias y herramientas. Manejo de estados, animaciones e implementar APIs',
+                                4000,
+                                'Abajo vas a encontrar links a mi perfil de github, linkedin, email y CV.',
+                                5000,
+                                'Podes hacer click en el teclado de abajo! no te vayas sin haberlo probado 🖱️ 👇',
+                                5000
+                            ]}
+                            wrapper="span"
+                            deletionSpeed={88}
+                            speed={78}
+                            cursor={true}
+                            repeat={Infinity}
+                            // style={{ 'fontSize': '1vw' }}
+                            className="responsive-text text-white font-light"
+                        />
+                    </animated.div>
+                </div>
+                <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-4/6 xl:w-5/6">
+                    <KeyboardScene />
+                </animated.div>
+            </div>
+
+            <animated.div style={styles} className="mt-10 flex lg:justify-between space-x-12 lg:mt-20 lg:w-4/6 xl:5/6 text-stone-200/80">
                 <a href={data?.github_profile_url} target="_blank">
                     <FaGithub class="h-9 w-9" />
                 </a>
@@ -106,6 +120,7 @@ export default function About() {
                     <MdOutlineContactPage class="h-9 w-9" />
                 </a>
             </animated.div>
+
         </div>
     )
 }

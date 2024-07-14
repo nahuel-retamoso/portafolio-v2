@@ -7,10 +7,10 @@ function App() {
 
   return (
     <div class="h-fit lg:flex lg:h-screen lg:w-full lg:px-28 xl:px-36 2xl:px-56">
-    <div class="lg:w-2/5 ">
+    <div class="lg:w-2/5 lg:h-full">
       <About/>
     </div>
-    <div class="lg:w-3/5 lg:overflow-scroll lg:scrollbar-hide lg:pl-24 lg:pt-16">
+    <div class="lg:w-3/5 lg:overflow-scroll lg:scrollbar-hide lg:pl-6 lg:pt-16">
       <Projects/>
       <Skills/>
       <Footer/>
