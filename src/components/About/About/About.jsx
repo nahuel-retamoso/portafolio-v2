@@ -14,7 +14,7 @@ export default function About() {
 
 
     return (
-        <div className="flex flex-col lg:justify-between lg:h-full p-7 lg:py-20">
+        <div className="flex flex-col lg:justify-between lg:h-full p-7 lg:py-20 pt-14">
             <Title />
             <div>
                 <Terminal />
