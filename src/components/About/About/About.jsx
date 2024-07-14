@@ -17,8 +17,10 @@ export default function About() {
         <div className="flex flex-col lg:justify-between lg:h-full p-7 lg:py-20 pt-14">
             <Title />
             <div>
+                <div className="lg:pr-5">
                 <Terminal />
                 <Buttons />
+                </div>
                 <animated.div style={styles} class="w-full aspect-[4/3] border-zinc-2 lg:w-4/6 xl:w-5/6">
                     <KeyboardScene />
                 </animated.div>
