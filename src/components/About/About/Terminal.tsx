@@ -46,16 +46,12 @@ function Terminal() {
                 <TypeAnimation
                     sequence={[
                         1000,
-                        'computer@nahuel-desk:~$ Hola! soy Nahuel, este mi portafolio 👋. Vivo en Buenos Aires, Argentina 📌. Te invito a ver mis proyectos personales. Cada uno cuentan con deploy y link al repo de GitHub.',
+                        'computer@nahuel-desk:~$ Hola! soy Nahuel, este mi portafolio 👋. Soy programador full-stack, tengo experiencia realizando e-commerce y aplicaciones web. Te invito a ver mis proyectos personales. Cada uno cuentan con deploy y link a repositorio de GitHub',
                         4000,
-                        'computer@nahuel-desk:~$ Inicié a programar de manera autodidacta usando javascript y aprendiendo conceptos. Luego realicé el curso de React y back-end con Node.js en Coderhouse.',
+                        'computer@nahuel-desk:~$ En mis proyectos use diversas librerias, para animaciones, manejo de estado, testing y APIs. Tambien realice integraciones de pasarelas de pago, como Mercadopago',
                         4000,
-                        'computer@nahuel-desk:~$ Con mis proyectos personales aprendi a usar diversas librerias y herramientas. Manejo de estados, animaciones e implementar APIs',
+                        'computer@nahuel-desk:~$ Tengo conocimiento sobre metodologias agiles, los procesos de desarrollo de software y herramientas de integracion y entrega continua',
                         4000,
-                        'computer@nahuel-desk:~$ Abajo vas a encontrar links a mi perfil de github, linkedin, email y CV.',
-                        5000,
-                        'computer@nahuel-desk:~$ Podes hacer click en el teclado de abajo! no te vayas sin haberlo probado 🖱️ 👇',
-                        5000
                     ]}
                     wrapper="span"
                     deletionSpeed={88}
